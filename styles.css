@@ -14,18 +14,17 @@ h2 {
     padding-bottom: 5px;
 }
 
-p {
-    color: black;
-}
+/*
+Specificity Challenge:
 
-header {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
+The p element selector has a specificity of 0-0-0-1.
+The .highlight class selector has a specificity of 0-0-1-0.
 
+Both selectors target the same paragraph, but .highlight is more specific
+because a class selector has greater specificity than an element selector.
 
+So the .highlight rule wins and the paragraph text becomes blue.
+*/
 
 p {
     color: black;
@@ -35,12 +34,12 @@ p {
     color: blue;
 }
 
-#special-title {
+header {
+    background-color: #222;
     color: white;
+    text-align: center;
+    padding: 40px 20px;
 }
-
-
-
 
 nav {
     background-color: #333;
@@ -67,7 +66,6 @@ nav a:hover {
     background-color: #555;
 }
 
-
 main {
     width: 80%;
     margin: 30px auto;
@@ -79,20 +77,19 @@ section {
     padding: 25px;
 }
 
-
 #about img {
     width: 160px;
     height: 160px;
     border-radius: 50%;
 }
 
-
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: left;
@@ -101,7 +98,6 @@ th, td {
 th {
     background-color: #eee;
 }
-
 
 footer {
     text-align: center;
