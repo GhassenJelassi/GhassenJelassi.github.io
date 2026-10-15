@@ -1,6 +1,10 @@
-HTTP Request Reflection:
 
-When I open my website in a browser, the browser sends an HTTP request through the Internet to the server hosting my website. GitHub receives the request and sends the website files back to the browser.
-The browser then loads the HTML file and requests the CSS file and image. After getting those files, the browser puts everything together and displays my website.
+1. Explain the difference between flex-direction: row and flex-direction: column.
 
-Browser > HTTP Request > GitHub Pages > HTTP Response > Browser > Website
+Row places items horizontally next to each other and column places items vertically on top of each other. I used row for the navigation on desktop and column for the navigation on mobile.
+
+
+
+2. Why is it important to use relative units (like %, vh, or rem) instead of fixed pixels (px) for responsive design?
+
+Relative units help the website adjust to different screen sizes. Fixed pixels can make elements too large or too small on different aspect ratios. It make it possible to use the website on both computers and phones.
